@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', 'Arial', sans-serif;
+	background-color: #f5f7fa;
+	color: #333;
+	line-height: 1.6;
+	padding: 20px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.app {
+	width: 100%;
+	max-width: 600px;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+}
+
+.app__form {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin-bottom: 30px;
+}
+
+.app__label {
+	display: flex;
+	flex-direction: column;
+	font-weight: 600;
+	color: #2c3e50;
+	gap: 8px;
+}
+
+.app__input {
+	padding: 12px 15px;
+	border: 2px solid #e1e8ed;
+	border-radius: 8px;
+	font-size: 16px;
+	transition: border-color 0.3s;
+}
+
+.app__input:focus {
+	outline: none;
+	border-color: #3498db;
+	box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.app__fieldset {
+	border: 2px solid #e1e8ed;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.app__legend {
+	font-weight: 600;
+	color: #2c3e50;
+	padding: 0 10px;
+}
+
+.app__checkbox-label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	transition: color 0.2s;
+}
+
+.app__checkbox-label:hover {
+	color: #3498db;
+}
+
+.app__checkbox {
+	width: 18px;
+	height: 18px;
+	accent-color: #3498db;
+	cursor: pointer;
+}
+
+.app__button {
+	background-color: #3498db;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 14px 20px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.app__button:hover {
+	background-color: #2980b9;
+	transform: translateY(-2px);
+}
+
+.app__button:active {
+	transform: translateY(0);
+}
+
+.app__password {
+	text-align: center;
+	padding: 20px;
+	background-color: #f8f9fa;
+	border-radius: 8px;
+	border: 2px dashed #e1e8ed;
+}
+
+.app__result-text {
+	font-weight: 600;
+	color: #2c3e50;
+	margin-bottom: 10px;
+}
+
+.app__result {
+	font-family: 'Courier New', monospace;
+	font-size: 18px;
+	font-weight: bold;
+	color: #27ae60;
+	word-break: break-all;
+	padding: 10px;
+	background-color: #ecf0f1;
+	border-radius: 5px;
+}
